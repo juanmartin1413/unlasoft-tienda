@@ -9,11 +9,17 @@ export default function ItemCount({stock, initial, onAdd}){
         if(valor<stock){
             setValor(valor+1);
         }
+        else{
+            alert('No hay suficiente stock');
+        }
     }
 
     function disminuirCantidad(){
         if(valor>0){
             setValor(valor-1);
+        }
+        else{
+            alert('El valor no puede ser menor a 0');
         }
     }
 
