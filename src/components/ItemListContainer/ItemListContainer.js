@@ -9,8 +9,11 @@ export default function ItemListContainer({greeting}){
     }
 
     return (
-        <div className='container-fluid mt-4'>
-            <ItemCount stock={5} initial={1} onAdd={agregarItems}/>
+        <div>
+            <h1>{greeting}</h1>
+            <div className='container-fluid mt-4'>
+                <ItemCount stock={5} initial={1} onAdd={agregarItems}/>
+            </div>
         </div>
 
     );
