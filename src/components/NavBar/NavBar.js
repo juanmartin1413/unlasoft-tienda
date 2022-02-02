@@ -1,5 +1,7 @@
 import React from 'react';
 import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget';
+
 
 export default function NavBar(){
     return (
@@ -41,9 +43,12 @@ export default function NavBar(){
                     <a className="nav-link" aria-current="page" href="#">CONTACTO</a>
                     </li>
                 </ul>
+                <span id='btnCart' className='btnNavBar btn m-2'>
+                    <CartWidget/>
+                </span> 
                 <form className="d-flex">
                     <input className="form-control me-2" type="search" aria-label="Search"/>
-                    <button className="btn btn-outline-success" type="submit">Buscar</button>
+                    <button className="btn btn-outline-success btnNavBar text-white" type="submit">Buscar</button>
                 </form>
                 </div>
             </div>
