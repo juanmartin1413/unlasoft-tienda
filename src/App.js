@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="container">
       <NavBar/>
-      <ItemListContainer greeting="Tp N° 4 Contador con boton"/>
+      <ItemListContainer greeting="Curso React Coderhouse"/>
     </div>
   );
 }
